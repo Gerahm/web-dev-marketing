@@ -21,11 +21,14 @@ body {
     padding: 0;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
 }
-.cs-topper {
+
+/* .cs-topper {
     font-size: var(--topperFontSize);
     line-height: 1.2em;
     text-transform: uppercase;
@@ -56,5 +59,4 @@ body {
     max-width: 40.625rem;
     margin: 0;
     color: var(--bodyTextColor);
-}
-                            
+} */
