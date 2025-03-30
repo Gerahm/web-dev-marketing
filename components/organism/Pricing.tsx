@@ -124,7 +124,7 @@ const Pricing = () => {
                       className={`w-[1.125rem] h-auto ${
                         plan.isPopular ? "filter invert brightness-200" : ""
                       }`}
-                      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mech-check.svg"
+                      src="/images/checkmark.svg"
                       alt="checkmark"
                       width={18}
                       height={18}
@@ -140,14 +140,14 @@ const Pricing = () => {
       {/* Floating Images */}
       <Image
         className="absolute top-0 left-0 w-[clamp(4.75rem,7vw,7.5625rem)] h-auto pointer-events-none z-[1]"
-        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/left-chevron.svg"
+        src="/images/left-chevron.svg"
         alt="left chevron"
         width={121}
         height={272}
       />
       <Image
         className="absolute bottom-0 right-0 w-[clamp(4.75rem,7vw,7.5625rem)] h-auto pointer-events-none z-[1]"
-        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/right-chevron.svg"
+        src="/images/right-chevron.svg"
         alt="right chevron"
         width={121}
         height={272}
