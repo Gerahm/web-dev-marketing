@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+// import type { Metadata } from "next";
 // import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/molecules/Header";
@@ -13,14 +13,14 @@ import Footer from "@/components/molecules/Footer";
 //   subsets: ["latin"],
 // });
 
-export const metadata: Metadata = {
-  title: "Auto Repair Service",
-  description: "Professional auto repair services for all makes and models",
-  viewport: "width=device-width, initial-scale=1",
-  icons: {
-    icon: "/favicon.ico",
-  },
-};
+// export const metadata: Metadata = {
+//   title: "Auto Repair Service",
+//   description: "Professional auto repair services for all makes and models",
+//   viewport: "width=device-width, initial-scale=1",
+//   icons: {
+//     icon: "/favicon.ico",
+//   },
+// };
 
 export default function RootLayout({
   children,
