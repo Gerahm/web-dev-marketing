@@ -30,7 +30,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen bg-background antialiased">
-        {" "}
         <div className="flex flex-col min-h-screen">
           <Header />
           <main className="flex-1 overflow-y-auto relative">{children}</main>

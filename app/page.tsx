@@ -1,11 +1,5 @@
-import HeroSection from "@/components/organism/HeroSection";
+import { redirect } from "next/navigation";
 
-const Dashboard = () => {
-  return (
-    <>
-      <HeroSection />
-    </>
-  );
-};
-
-export default Dashboard;
+export default function Home() {
+  redirect("/dashboard");
+}
