@@ -1,17 +1,11 @@
-"use client";
-import { useEffect } from "react";
-import { useRouter } from "next/navigation";
+import HeroSection from "@/components/organism/HeroSection";
 
-export default function Home() {
-  const router = useRouter();
-
-  useEffect(() => {
-    router.push("/dashboard");
-  }, [router]);
-
+const Dashboard = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen">
-      <div className="animate-pulse">Loading...</div>
-    </div>
+    <>
+      <HeroSection />
+    </>
   );
-}
+};
+
+export default Dashboard;
