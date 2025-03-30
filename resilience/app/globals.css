@@ -87,6 +87,23 @@ body.cs-open {
   --sidebar-accent-foreground: oklch(0.216 0.006 56.043);
   --sidebar-border: oklch(0.923 0.003 48.717);
   --sidebar-ring: oklch(0.709 0.01 56.259);
+
+  /* Theme Colors */
+  --primary: #ff6a3e;
+  --primaryLight: #ffba43;
+  --secondary: #ffba43;
+  --secondaryLight: #ffba43;
+  --headerColor: #1a1a1a;
+  --bodyTextColor: #4e4b66;
+  --bodyTextColorWhite: #fafbfc;
+
+  /* Typography */
+  --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+  --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+  --bodyFontSize: 1rem;
+
+  /* Spacing */
+  --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
 }
 
 .dark {
@@ -144,23 +161,6 @@ body.cs-open {
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --primary: #ff6a3e;
-    --primaryLight: #ffba43;
-    --secondary: #ffba43;
-    --secondaryLight: #ffba43;
-    --headerColor: #1a1a1a;
-    --bodyTextColor: #4e4b66;
-    --bodyTextColorWhite: #fafbfc;
-    /* 13px - 16px */
-    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
-    /* 31px - 49px */
-    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
-    --bodyFontSize: 1rem;
-    /* 60px - 100px top and bottom */
-    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
-  }
-
   body {
     margin: 0;
     padding: 0;

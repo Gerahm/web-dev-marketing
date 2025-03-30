@@ -1,14 +1,13 @@
 import React from "react";
 import Header from "@/components/molecules/Header";
 import Footer from "@/components/molecules/Footer";
+
 const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="relative flex flex-col w-full h-full">
+    <div className="flex flex-col min-h-screen">
       <Header />
-      <div className="absolute w-full h-screen">{children}</div>
-      <div className="absolute bottom-0 w-full h-10 bg-red-500">
-        <Footer />
-      </div>
+      <main className="flex-1 overflow-y-auto relative">{children}</main>
+      <Footer />
     </div>
   );
 };

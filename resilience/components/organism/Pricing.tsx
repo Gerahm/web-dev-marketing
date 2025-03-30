@@ -48,7 +48,7 @@ const pricingData = [
 
 const Pricing = () => {
   return (
-    <section className="relative bg-[#f7f8f8]">
+    <section className=" bg-[#f7f8f8]">
       <div className="container mx-auto flex flex-col items-center gap-[clamp(3rem,6vw,4rem)] max-w-[80em] px-4 pt-[clamp(4rem,10vw,8rem)] pb-[clamp(3.75rem,7.82vw,6.25rem)]">
         <div className="w-full text-center flex flex-col items-center relative z-10">
           <span className="text-primary text-[clamp(0.8125rem,1.6vw,1rem)] uppercase font-bold tracking-wider mb-1">
@@ -75,7 +75,7 @@ const Pricing = () => {
               } flex flex-col`}
             >
               {plan.isPopular && (
-                <span className="absolute top-0 right-0 uppercase text-[0.8125rem] font-bold leading-[1.2em] tracking-[0.01em] py-2 px-5 bg-[#ffba43] text-[#1a1a1a]">
+                <span className=" top-0 right-0 uppercase text-[0.8125rem] font-bold leading-[1.2em] tracking-[0.01em] py-2 px-5 bg-[#ffba43] text-[#1a1a1a]">
                   Popular
                 </span>
               )}
@@ -101,7 +101,7 @@ const Pricing = () => {
                 {plan.description}
               </p>
               <Link
-                href=""
+                href="/book-appointment"
                 className={`text-base leading-[clamp(2.875em,5.5vw,3.5em)] font-bold text-center text-white min-w-[9.375rem] px-6 ${
                   plan.isPopular
                     ? "bg-[#ff6a3e] hover:bg-black"

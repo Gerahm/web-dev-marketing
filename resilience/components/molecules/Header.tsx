@@ -3,7 +3,7 @@ import Link from "next/link";
 import NavigationHeader from "@/components/molecules/NavigationHeader";
 const Header = () => {
   return (
-    <header className="w-full box-border px-4 bg-white shadow-[0_8px_24px_rgba(149,157,165,0.2)] fixed z-[10000]">
+    <header className="sticky top-0 z-50 w-full box-border px-4 bg-white shadow-[0_8px_24px_rgba(149,157,165,0.2)] fixed ">
       <div className="w-full max-w-[80rem] mx-auto flex justify-flex-end items-center gap-6">
         {/* <!--Nav Logo--> */}
         <Link

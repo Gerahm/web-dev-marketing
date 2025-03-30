@@ -2,7 +2,7 @@ import Pricing from "./Pricing";
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full ">
+    <section className=" w-full ">
       <Pricing />
     </section>
   );
