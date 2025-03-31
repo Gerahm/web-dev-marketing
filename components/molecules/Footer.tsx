@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1a1a1a] py-[clamp(3.75rem,7.82vw,6.25rem)] px-4">
+    <footer className="bottom-0  w-full bg-[#1a1a1a] py-[clamp(3.75rem,7.82vw,6.25rem)] px-4">
       <div className="w-full max-w-[34.375rem] md:max-w-[80rem] mx-auto flex flex-wrap justify-start items-start gap-x-[clamp(4.25rem,10%,6.25rem)]">
         {/* Logo Group */}
         <div className="w-full md:w-auto md:mr-auto relative">

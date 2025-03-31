@@ -29,11 +29,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-background antialiased">
-        <div className="flex flex-col min-h-screen">
-          <Header />
-          <main className="flex-1 overflow-y-auto relative">{children}</main>
-          <Footer />
+      <body className="relative min-h-screen bg-background antialiased">
+        <div className="  flex flex-col min-h-screen">
+          <div className=" w-full ">
+            <Header />
+          </div>
+          <div className="w-full flex-1 overflow-y-auto ">
+            <main>{children}</main>
+          </div>
+          <div className="w-full">
+            <Footer />
+          </div>
         </div>
       </body>
     </html>

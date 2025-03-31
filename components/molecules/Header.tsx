@@ -1,49 +1,45 @@
 import Image from "next/image";
 import Link from "next/link";
 import NavigationHeader from "@/components/molecules/NavigationHeader";
+import { Button } from "../ui/button";
 const Header = () => {
   return (
-    <header className="sticky top-0 z-50 w-full box-border px-4 bg-white shadow-[0_8px_24px_rgba(149,157,165,0.2)] fixed ">
-      <div className="w-full max-w-[80rem] mx-auto flex justify-flex-end items-center gap-6">
+    <header className="relative h-[100px] my-auto transition-all duration-300 top-0 z-50 w-full box-border px-10 xs:px-10  xl:px-70 lg:px-10  md:px-10 justify-center items-center bg-black shadow-[0_8px_24px_rgba(149,157,165,0.2)] fixed ">
+      <div className=" w-full md:w-auto md:mr-auto  relative flex flex-row items-center justify-center md:max-w-[80rem] mx-auto gap-10">
         {/* <!--Nav Logo--> */}
-        <Link
-          href=""
-          className="w-[18.4%] max-w-[21.875rem] h-[4.0625rem] mr-auto ml-0 p-0 flex justify-center items-center z-100"
-          aria-label="back to home"
-        >
-          <Image
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Flogo-black.svg"
-            alt="logo"
-            width="210"
-            height="29"
-            aria-hidden="true"
-            decoding="async"
-          />
-        </Link>
+        <div className="flex-shrink-0 ">
+          <Link
+            href=""
+            className="justify-center items-center"
+            aria-label="back to home"
+          >
+            <Image
+              src="/images/logo.svg"
+              alt="logo"
+              width="199"
+              height="68"
+              aria-hidden="true"
+              className="w-[130px] xs:w-[130px] sm:w-[130px] md:w-[150px] lg:w-[199px] h-auto "
+              decoding="async"
+            />
+          </Link>
+        </div>
         {/* <!--Navigation List--> */}
+
+        {/* <!--Mobile Nav Toggle--> */}
         <nav
           role="navigation"
-          className="w-full m-0 p-0 flex justify-end items-center [gap:clamp(1.25rem,2.6vw,2.25rem)]"
+          className="w-full hidden sm:hidden md:hidden py-8 sm:py-8 md:py-8 lg:py-0 lg:block [&[style*='opacity: 0']~div]:absolute [&[style*='opacity: 0']~div]:right-0 [&[style*='opacity: 0']~div]:top-1/2 [&[style*='opacity: 0']~div]:-translate-y-1/2"
         >
-          {/* <!--Mobile Nav Toggle--> */}
-          <button aria-label="mobile menu toggle">
-            <div>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </button>
-          {/* <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are--> */}
-          <div className="  list-none py-8 flex-none justify-end">
+          <div className="relative py-8 w-full">
             <NavigationHeader />
           </div>
         </nav>
-        {/* <a href="" >Contact Us</a> */}
-        {/* <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
-        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
-            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
-            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
-        </button> --> */}
+        <div className="w-full pl-0 lg:pl-0 xl:pl-20 transition-all duration-300">
+          <Button variant="getStarted">
+            <span className="text-black p-4">GET STARTED</span>
+          </Button>
+        </div>
       </div>
     </header>
   );

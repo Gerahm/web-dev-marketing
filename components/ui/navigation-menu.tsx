@@ -62,6 +62,10 @@ const navigationMenuTriggerStyle = cva(
   "group  h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-accent data-[state=open]:text-accent-foreground data-[state=open]:focus:bg-accent data-[state=open]:bg-accent/50 ring-ring/10 dark:ring-ring/20 dark:outline-ring/40 outline-ring/50 transition-[color,box-shadow] focus-visible:ring-4 focus-visible:outline-1"
 );
 
+const customNavigationMenuTrigger = cva(
+  "group  h-9 w-max items-center justify-center rounded-md bg-background  py-2 text-sm font-medium bg-transparent hover:bg-transparent relative text-white hover:text-white after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-0 after:bg-[#ffe500] after:transition-all after:duration-300 hover:after:w-full"
+);
+
 function NavigationMenuTrigger({
   className,
   children,
@@ -165,4 +169,5 @@ export {
   NavigationMenuIndicator,
   NavigationMenuViewport,
   navigationMenuTriggerStyle,
+  customNavigationMenuTrigger,
 };

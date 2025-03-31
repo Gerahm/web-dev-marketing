@@ -11,7 +11,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   // NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
+  customNavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 
 export const components: {
@@ -58,53 +58,46 @@ export const components: {
 
 export default function NavigationHeader() {
   return (
-    <NavigationMenu className="w-full m-0 p-0 flex justify-start items-center [gap:clamp(1.25rem,2.6vw,2.25rem)]">
-      <NavigationMenuList className="w-full h-full pb-[2.4em] bg-white justify-end  absolute  left-0 max-[950px]:[transform:scaleY(0)] max-[950px]:[opacity:0] [transition:transform_0.1s,opacity_0.1s] origin-top">
+    <NavigationMenu className=" flex items-center [gap:clamp(1.25rem,2.6vw,2.25rem)]">
+      <NavigationMenuList className="flex gap-10 h-full   max-[1067px]:[transform:scaleY(0)] max-[1067px]:[opacity:0] [transition:transform_0.1s,opacity_0.1s] origin-top">
         <NavigationMenuItem>
           <Link href="/" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+            <NavigationMenuLink className={customNavigationMenuTrigger()}>
               Home
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/about-us" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              About Us
+          <Link href="/about" legacyBehavior passHref>
+            <NavigationMenuLink className={customNavigationMenuTrigger()}>
+              About
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/faq" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              FAQs
+          <Link href="/services" legacyBehavior passHref>
+            <NavigationMenuLink className={customNavigationMenuTrigger()}>
+              Services
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/web-design-dev" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Web Design & Dev
+          <Link href="/pricing" legacyBehavior passHref>
+            <NavigationMenuLink className={cn(customNavigationMenuTrigger())}>
+              Pricing
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/local-seo" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Local SEO
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/website-analytics-reporting" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Analytics & Reporting
+          <Link href="/portfolio" legacyBehavior passHref>
+            <NavigationMenuLink className={customNavigationMenuTrigger()}>
+              Portfolio
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href="/contact-us" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+            <NavigationMenuLink className={customNavigationMenuTrigger()}>
               Contact Us
             </NavigationMenuLink>
           </Link>
