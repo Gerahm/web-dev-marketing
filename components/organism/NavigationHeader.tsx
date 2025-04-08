@@ -13,7 +13,6 @@ import {
   NavigationMenuTrigger,
   customNavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-import { ChevronDown } from "lucide-react";
 
 export const components: {
   title: string;
