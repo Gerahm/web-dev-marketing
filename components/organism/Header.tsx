@@ -1,13 +1,11 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
+import Logo from "@/components/atoms/logo";
 import NavigationHeader from "@/components/organism/NavigationHeader";
-import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import CustomDropDown from "../molecules/CustomDropDown";
-
+import CustomDropDown from "@/components/molecules/CustomDropDown";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -16,16 +14,7 @@ const Header = () => {
       <div className="h-full flex flex-row gap-10 p-3 mx-0 sm:mx-0 md:mx-0 lg:mx-0 xl:mx-[16%] relative">
         {/* <!--Nav Logo--> */}
         <div className="flex-shrink-0 my-auto">
-          <Link href="" aria-label="back to home">
-            <Image
-              src="/images/logo.svg"
-              alt="logo"
-              width="199"
-              height="68"
-              aria-hidden="true"
-              decoding="async"
-            />
-          </Link>
+          <Logo />
         </div>
         {/* <!--Navigation List--> */}
         <div className="z-1 w-full hidden lg:flex md:hidden sm:hidden xl:flex">
@@ -36,9 +25,14 @@ const Header = () => {
             <div className="my-auto flex-grow">
               <NavigationHeader />
             </div>
-            <div className="transition-all duration-300 flex-shrink-0 ml-4">
-              <Button variant="getStarted">
-                <span className="text-black p-4">GET STARTED</span>
+            <div className="transition-all duration-300 flex-shrink-0 ml-4 ">
+              <Button
+                variant="ghost"
+                className="rounded-2 py-[15px] px-[30px] w-[161px] h-[52px]"
+              >
+                <span className="text-white font-bold text-[18px] ">
+                  GET STARTED
+                </span>
               </Button>
             </div>
           </nav>

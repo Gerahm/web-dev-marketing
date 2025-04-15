@@ -1,12 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const Logo = ({ logo }: { logo: string }) => {
+export default function Logo() {
   return (
-    <Link href="/" className="cs-logo" aria-label="back to home">
-          <Image src={logo} alt="logo" width={210} height={29} className="w-auto h-auto" />
-        </Link> 
+    <Link href="/" aria-label="back to home">
+      <Image
+        src="/images/Logo.png"
+        alt="Logo"
+        width="199"
+        height="68"
+        aria-hidden="true"
+        decoding="async"
+      />
+    </Link>
   );
-};
-
-export default Logo;
+}

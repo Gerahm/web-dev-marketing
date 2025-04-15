@@ -205,3 +205,8 @@ body.cs-open {
     color: var(--bodyTextColor);
   }
 }
+
+.clip-hero {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  /* Adjust the percentages to control how much of the bottom is hidden */
+}
