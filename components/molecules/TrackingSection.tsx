@@ -8,8 +8,9 @@ const TrackingSection = () => {
       </div>
       <div className="relative flex flex-col gap-4 bg-black text-white p-[15px] rounded-[10px] h-[450px] w-[320px]">
         <span className="pt-13 text-[28px] text-white font-bold leading-tight">
-          PERFORMANCE TRACKING
-          <br />& REPORTING
+          PERFORMANCE
+          <br />
+          TRACKING & REPORTING
         </span>
         <p className="text-[20px] text-white font-[300px] pt-1">
           Get clear, easy-to-understand
