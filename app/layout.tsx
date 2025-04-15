@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: "Professional auto repair services for all makes and models",
   viewport: "width=device-width, initial-scale=1",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/images/Logo.png",
   },
 };
 
