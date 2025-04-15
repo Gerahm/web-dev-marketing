@@ -14,7 +14,7 @@ const SEOSection = () => {
         <p className="text-[20px] text-white font-[300px] pt-9">
           We help your business show up on <br /> Google when local customers
           <br /> searching for your services. From <br /> keyword targeting to
-          on-page SEO, <br /> we make sure you're found by the <br />
+          on-page SEO, <br /> we make sure you&apos;re found by the <br />
           right people in your area.
         </p>
         <Link

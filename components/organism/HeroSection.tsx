@@ -32,7 +32,8 @@ const HeroSection = () => {
               </span>
             </div>
             <p className="font-[var(--font-roboto-condensed)] text-[26px] text-white">
-              We don't just build websites — we help small service-based <br />
+              We don&apos;t just build websites — we help small service-based{" "}
+              <br />
               businesses grow. With no upfront costs, we invest in your <br />{" "}
               success from day one.
             </p>
